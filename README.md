@@ -61,6 +61,9 @@ Nacos支持三种部署模式
       WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memoryMonitor' defined in URL [jar:file:/D:/ProgramFiles/nacos/target/nacos-server.jar!/BOOT-INF/lib/nacos-config-2.2.2.jar!/com/alibaba/nacos/config/server/monitor/MemoryMonitor.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'asyncNotifyService': Unsatisfied dependency expressed through field 'dumpService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalDumpService': Invocation of init method failed; nested exception is ErrCode:500, ErrMsg:Nacos Server did not start because dumpservice bean construction failure :
     No DataSource set
   9.3  注意下nacos 配置文件  spring.datasource.platform=mysql 是否 注释 因为我使用的是mysql 8 的版本所以注释该地方
+
+nacos 配置参考来源
+  https://cloud.tencent.com/developer/article/1873947
   
       
    
