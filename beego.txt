@@ -1,0 +1,1 @@
+bee generate routers  重新生成路由
