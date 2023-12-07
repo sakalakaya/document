@@ -1,3 +1,12 @@
 bee generate routers  重新生成路由
 
 go clean -modcache
+
+nacos 
+mac m1  https://zhuanlan.zhihu.com/p/531360994
+docker search nacos  查看镜像
+docker pull zhusaidong/nacos-server-m1:2.0.3  拉取m1
+
+docker run -d -p 8848:8848 --env MODE=standalone  --name nacos  zhusaidong/nacos-server-m1:2.0.3
+
+访问地址：http://localhost:8848/nacos/ 账号/密码：nacos/nacos
