@@ -1,0 +1,8 @@
+# Step 1: 删除本地的最近提交
+git reset --hard HEAD~1
+
+# Step 2: 强制推送到远程仓库
+git push origin feature-branch --force
+
+# Step 3: 删除远程的整个分支
+git push origin --delete feature-branch
