@@ -1,3 +1,24 @@
 
 H5 
 game.dataMgr.accMo.isSecret = false
+
+
+
+# log 日志
+export const LogEnmCode = {
+    //rechargeWayReq : "rechargeWayReq",  //支付矩道送出
+    rechargeWayRes: 'rechargeWayRes', //支付矩道返回
+    rechargeWayNewRes: 'rechargeWayNewRes', //支付矩道返回(合併or展開)
+    rechargePayReq: 'rechargePayReq', //支付下單送出
+    rechargePayRes: 'rechargePayRes', //支付下單返回
+    payConfigRes: 'payConfigRes', //充值单取理由次數返回
+    cancelpaymentRes: 'cancelpaymentRes', //充值取消订单返回
+    rechargeNameListRes: 'rechargeNameListRes', //支付存款人姓名列表返回
+    depositRateRes: 'depositRateRes', //請求支付寶+微信當日充值上限返回
+    uploadMatchNewRes: 'uploadMatchNewRes', //拿到imgUrl,通知server憑證上傳完成
+    rechargeFastPayReq: 'rechargeFastPayReq', //快捷支付下單送出
+    rechargeFastPayRes: 'rechargeFastPayRes', //快捷支付下單返回
+    gamePayRetroactivableRes: 'gamePayRetroactivableRes', //取得查单纪录返回
+    requestRoactivableRes: 'requestRoactivableRes', //自助查單上传凭证收集成功通知server
+    fastPayUsdtRes: 'fastPayUsdtRes' //26:USDT快捷下單返回
+}
